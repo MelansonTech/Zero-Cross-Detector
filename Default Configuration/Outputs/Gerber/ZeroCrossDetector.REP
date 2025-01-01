@@ -1,0 +1,291 @@
+*************************************************************
+FileName = ZeroCrossDetector.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : ZeroCrossDetector.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : ZeroCrossDetector.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : ZeroCrossDetector.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : ZeroCrossDetector.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : ZeroCrossDetector.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : ZeroCrossDetector.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : ZeroCrossDetector.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : ZeroCrossDetector.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : ZeroCrossDetector.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : ZeroCrossDetector.Outline
+
+    Adding Layer      : Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 3
+      File : ZeroCrossDetector.GM3
+
+    Adding Layer      : Mechanical 3
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Assembly Top
+      File : ZeroCrossDetector.Assembly Top
+
+    Adding Layer      : Assembly Top
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+    D24
+    D27
+    D28
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : ZeroCrossDetector.3D Top
+
+    Adding Layer      : 3D Top
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D20
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : ZeroCrossDetector.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+    D27
+    D42
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Bottom
+      File : ZeroCrossDetector.Courtyard Bottom
+
+    Adding Layer      : Courtyard Bottom
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D19
+    D20
+    D43
+*************************************************************
+

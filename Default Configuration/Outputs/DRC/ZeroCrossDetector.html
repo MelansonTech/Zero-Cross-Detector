@@ -1,0 +1,388 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+                    *{
+                    margin:0;
+                    padding: 0;
+                    }
+
+                    body {
+                    margin:3em;
+                    font-family: OpenSans;
+                    font-size: 0.875em;
+                    font-weight: 400;
+                    line-height: 1.438em;
+                    color:  #2d2d2d;
+                    width:1100px;
+                    }
+
+                    h1, h2, h3, h4, h5, h6 {
+                    padding: 0.3em 0;
+                    color : #444444;
+                    font-family: Gotham;
+                    font-size: 1.643em;
+                    font-weight: 300;
+                    line-height: 1.714em;
+                    }
+
+                    td, th {
+                    text-align : left;
+                    width : 8em;
+                    padding: 0.5em 0.5em 0.5em 0;
+                    font-weight: 400;
+                    }
+
+                    th.column1, td.column1 {
+                    text-align: left;
+                    width : auto;
+                    }
+
+                    table {
+                    width : 100%;
+                    border-collapse:collapse;
+                    }
+
+                    table td {border-bottom:1px solid #ececec;}
+
+                    .header_holder td {border-bottom:0px;}
+
+                    .DRC_summary_header {
+                    padding-bottom : 0.1em;
+                    width: 100%;
+                    align: left;
+                    }
+
+                    .DRC_summary_header_col1,
+                    .DRC_summary_header_col3
+                    {
+                    padding : 0em;
+                    padding-top : 0.2em;
+                    padding-bottom 0.2: 0em;
+                    width : auto;
+                    vertical-align: top;
+                    }
+
+                    .DRC_summary_header_col3
+                    {
+                    text-align: left;
+                    }
+
+                    .header_holder
+                    {
+                    Width = 100%;
+                    padding = 0;
+                    }
+
+                    .front_matter, .front_matter_column1, .front_matter_column3
+                    {
+                    left:0;
+                    top:0;
+                    padding-top : 0.1em;
+                    width : 100%;
+                    vertical-align: top
+
+                    }
+                    .front_matter {
+
+                    margin-top: 5px;
+                    margin-left: 0px;
+                    horizontal-align: left;
+                    }
+
+
+                    .front_matter_column1, .DRC_summary_header_col1
+                    {
+                    width : 8em;
+                    padding-right:0.1em;
+                    }
+
+                    .front_matter_column3 {
+                    width         : auto;
+                    text-align    : left;
+                    margin-right  : 0.5em;
+                    }
+
+                    .total_column1, .total_column {
+                    font-weight : bold;
+                    }
+                    .total_column1 {
+                    text-align : right;
+                    }
+                    .warning, .error {
+                    color : red;
+                    font-weight : bold;
+                    }
+                    tr.onmouseout_odd {
+
+                    }
+                    tr.onmouseout_even {
+
+                    }
+                    tr.onmouseover_odd, tr.onmouseover_even {
+
+                    }
+                    p.contents_level1 {
+                    font-weight : bold;
+                    font-size : 1.143em;
+                    margin : 0.5em;
+                    }
+                    p.contents_level2 {
+                    position : relative;
+                    left : 20px;
+                    margin : 0.5em;
+                    }
+
+                    th, .front_matter_column1, .DRC_summary_header_col1, .total_title
+                    {
+                    color:  #6a6a6a;
+                    }
+
+                    a, a:link, a:visited, .q a:link,.q a:active,.q {
+                    color: #1e90b3;
+                    text-decoration: none;
+                    }
+
+                    a.callback, a:link.callback, a:visited.callback {
+                    color: #1e90b3;
+                    }
+                    a:hover, a.callback:hover
+                    {
+                    color: #6a6a6a;
+                    }
+                    .summary-title
+                    {
+                    text-transform:uppercase;
+                    }
+                    input
+                    {
+                    margin-right:0.5em;
+                    }
+                    #radio_mil
+                    {
+                    margin-left: 0.7em;
+                    }
+                </style><script type="text/javascript">
+                    function coordToMils(coord) {
+                    var number = coord / 10000;
+
+                    if (number != number.toFixed(3))
+                    number = number.toFixed(3);
+
+                    return number + 'mil'
+                    }
+
+                    function coordToMM(coord) {
+                    var number = 0.0254 * coord / 10000;
+
+                    if (number != number.toFixed(4))
+                    number = number.toFixed(4);
+
+                    return number + 'mm'
+                    }
+
+                    function convertCoord(coordNode, units) {
+                    for (var i = 0; i < coordNode.childNodes.length; i++) {
+                    coordNode.removeChild(coordNode.childNodes[i]);
+                    }
+
+                    var coord = coordNode.getAttribute('value');
+                    if (coord != null) {
+                    if (units == 'mm') {
+                    textNode = document.createTextNode(coordToMM(coord));
+                    coordNode.appendChild(textNode);
+                    } else if (units == 'mil') {
+                    textNode = document.createTextNode(coordToMils(coord));
+                    coordNode.appendChild(textNode);
+                    }
+                    }
+                    }
+
+                    function convertUnits(unitNode, units) {
+                    for (var i = 0; i < unitNode.childNodes.length; i++) {
+                    unitNode.removeChild(unitNode.childNodes[i]);
+                    }
+
+                    textNode = document.createTextNode(units);
+                    unitNode.appendChild(textNode);
+                    }
+
+                    function changeUnits(radio_input, units) {
+                    if (radio_input.checked) {
+
+                    var elements = document.getElementsByName('coordinate');
+                    if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                    convertCoord(elements[i], units);
+                    }
+                    }
+
+                    var elements = document.getElementsByName('units');
+                    if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                    convertUnits(elements[i], units);
+                    }
+                    }
+                    }
+                    }
+                </script></head>
+<body onload=""><img ALT="Altium" src="
+                file://E:\OneDrive\Shawn\CS Shared\Templates\CircuitStudio_logo.png
+            "><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<tr>
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column3">12/13/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column3">10:57:42 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column3"><a href="
+                file:///E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\ZeroCrossDetector.CSPcbDoc" class="file" title="E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\ZeroCrossDetector.CSPcbDoc">E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\ZeroCrossDetector.CSPcbDoc</a></td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Errors:
+                                </td>
+<td class="DRC_summary_header_col3">0</td>
+</tr>
+<tr>
+<td class="DRC_summary_header_col1">Warnings:
+                                </td>
+<td class="DRC_summary_header_col3">0</td>
+</tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:
+                                </td>
+<td class="DRC_summary_header_col3">0</td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name="IDJXAX5UGH0RDPD1ZIDNO01KTPBP4B3CQPOU5PNKKXXQD0UYUD1OFH"><h2 class="summary-title">Summary</h2></a><table>
+<tr>
+<th class="column1">Errors</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1"></td>
+<td class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1"></td>
+<td class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #ID4VXEJ2BCNIHPHHR1CF2KP20REB1PIGAQFHL2KZJ1AYEILKWKHYHD">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #ID1WLWVXB5Y3TQM4EQB0ZX4NT5J2UGYB2B4CDZSMDTKDJ50TMACZJ">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDKQOE204XQK5PI3AV2ZGCM1DHIOGIQKZPU4BYO1GH5KUVAVASR3MF">Silk to Silk (Clearance=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #ID0EQZU3LSE2BRJRR525JFTEI1MI4WJVCYRVQ1P4PM0XYNFGKDL1JM">Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDF2D3FIVLORUIB1W15CCV1YPP1PLLRCB3K2RBO4KD5ZWG0BP1E4SL">Minimum Solder Mask Sliver (Gap=0.01mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDY1JPLQ1L2EKGKS55KFTBHIJCIHI2QTQMHF2WKQHGVOVT0B4EN5PE">Hole To Hole Clearance (Gap=0.54mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDG5PAJMDD1XMZQFSCNNFSVTP5FFYB5GYAE2U3ZGPF5SKE4XLOQ1B">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDK2MMZI12BM0VHHCYJFIZOBH4WGLRXGJYLUUYCPMASPAV3QQPTQXH">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDKTDIGONVCGNRT31Q55FBIUGRJGJI3M0PVYRHGO5V4SDWK2XKH5N">Width Constraint (Min=0.13mm) (Max=0.5mm) (Preferred=0.13mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDRWAVYILFGUDVHA4LTOB4K2VA3DYGF1CRTHQU2PF113VYRJ02EMU">Clearance Constraint (Gap=2mm) (InNetClass('HVinA')),(InNetClass('HVinB'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #ID0KSVASFKEBOSH5MKGHBGWYBODNP0UFUFJJQ0GYLA050Y1KNQEXS">Clearance Constraint (Gap=0.254mm) (InNetClass('LowVolt')),(InNetClass('LowVolt'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDHXAYZMUTXRTTGNSQYS05AO0MBHJRXJOXQHSB0QPWNVOSGRSLF4RG">Clearance Constraint (Gap=1mm) (InNetClass('HighVolt')),(InNetClass('MidVolt'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDDDCK3J1WJO5LP2FXXNXZPSHX0NPQYSSCND0SFDJJQMKCEG1LGCGL">Clearance Constraint (Gap=2mm) (InNetClass('HighVolt')),(InNetClass('LowVolt'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDM1COJ25FGNYZJDMXV2V4DTZ2RBEOEP2FXUK3KOFGYMSOW5C5CTMM">Unpoured Polygon (Allow unpoured: False)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDBRF0BP1HYKUHG4NBUMNP3K0BHM30NGXLVDTBFD4UJCUHCLFNYTF">Clearance Constraint (Gap=1mm) (InNetClass('MidVolt')),(InNetClass('LowVolt'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="
+                                        #IDEEKLGNM3T4QMMNDSBJOY3GCN0C31X4PY52NJWIKSV2YBTOEQRDEC">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="
+                                        #IDLGBY3W5RHEF1JL3VKARZ2QG1GI5NLIIYT3W23ZT50O3PMV1V3GJ">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1"></td>
+<td class="column2"><span class="total_title">Total</span><br>0</td>
+</tr>
+</table><br></body>
+</html>

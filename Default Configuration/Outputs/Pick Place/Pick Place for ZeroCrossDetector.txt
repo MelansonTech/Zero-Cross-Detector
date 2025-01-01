@@ -1,0 +1,30 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+R9         res,_0805,_HD         30.25mm       28.25mm       30.25mm       28.25mm        31.2mm       28.25mm  T        180.00 Vishay CRCW08051K00JNEA
+R3         res,_0805,_HD          30.5mm        18.5mm        30.5mm        18.5mm       31.45mm        18.5mm  T        180.00 Vishay CRCW08051K00JNEA
+Q2         SOT23-3               30.48mm        25.4mm       30.48mm        25.4mm     29.4212mm     26.3576mm  T         90.00 SMBT2222A      
+Q1         SOT23-3               30.48mm       21.59mm       30.48mm       21.59mm     31.4376mm     22.6488mm  T        360.00 SMBT2222A      
+U1         SOIC-14              21.459mm      16.871mm      21.459mm      16.871mm      24.119mm      13.061mm  T        180.00 LM324ADR2G     
+R17        res,_0805,_HD        20.372mm      25.971mm      20.372mm      25.971mm      20.372mm      25.021mm  T         90.00 DNP            
+R16        res,_0805,_HD          8.75mm       19.75mm        8.75mm       19.75mm         9.7mm       19.75mm  T        180.00 CRCW0805100KFKEA
+R15        res,_0805,_HD        22.404mm      25.971mm      22.404mm      25.971mm      22.404mm      26.921mm  T        270.00 Vishay / Dale CRCW080510K0FKTA
+R14        res,_0805,_HD         18.25mm          26mm       18.25mm          26mm       18.25mm       26.95mm  T        270.00 Vishay / Dale CRCW080510K0FKTA
+R13        res,_0805,_HD          8.75mm       21.75mm        8.75mm       21.75mm         7.8mm       21.75mm  T        360.00 Vishay CRCW08051K00JNEA
+R12        res,_0805,_HD          24.4mm      25.975mm        24.4mm      25.975mm        24.4mm      25.025mm  T         90.00 Vishay CRCW08051K00JNEA
+R11        res,_0805,_HD         15.75mm        19.5mm       15.75mm        19.5mm        16.7mm        19.5mm  T        180.00 Vishay CRCW08051K00JNEA
+R10        res,_0805,_HD             4mm       18.75mm           4mm       18.75mm           4mm        19.7mm  T        270.00 RT0805BRD07332KL
+R8         Res,1206                 16mm         8.5mm          16mm         8.5mm       17.45mm         8.5mm  T        360.00 Res1           
+R7         res,_0805,_HD             4mm          15mm           4mm          15mm           4mm       15.95mm  T        270.00 RT0805BRD07332KL
+R6         res,_0805,_HD             4mm       11.25mm           4mm       11.25mm           4mm        12.2mm  T        270.00 RT0805BRD07332KL
+R5         res,_0805,_HD         22.75mm          10mm       22.75mm          10mm       22.75mm        9.05mm  T         90.00 Vishay / Dale CRCW080510K0FKTA
+R4         res,_0805,_HD            29mm       14.75mm          29mm       14.75mm          29mm        13.8mm  T         90.00 Vishay CRCW08051K00JNEA
+R2         Res,1206              3.933mm       6.667mm       3.933mm       6.667mm       3.933mm       5.217mm  T        270.00 Res1           
+R1         res,_0805,_HD         26.75mm       14.75mm       26.75mm       14.75mm       26.75mm        15.7mm  T        270.00 Vishay CRCW08051K00JNEA
+Logo1      Symbol,Open_Source         -26mm         -25mm        9.25mm          11mm         -26mm         -25mm  T        360.00 Open Source Logo
+J1         Header,8Pin,SingleRow,_RA,0.1"      18.323mm       5.099mm      18.323mm       5.099mm       9.433mm       5.099mm  T        360.00 HEADER,0.1",8Pin,SinlgeRow
+D2         SOT23-3                8.75mm       16.75mm        8.75mm       16.75mm      7.6912mm     17.7076mm  T         90.00 BAT54SLT1G     
+D1         SOT23-3                  26mm          10mm          26mm          10mm     27.0588mm      9.0424mm  T        270.00 BAT54SLT1G     
+C6         Cap,0805             21.388mm      23.173mm      21.388mm      23.173mm      20.438mm      23.173mm  T        360.00 08055C104JAT2A 
+C2         Cap,0805             31.349mm       14.47mm      31.349mm       14.47mm      31.349mm       15.42mm  T        270.00 08055C104JAT2A 
+C1         Cap,0805             16.271mm      14.291mm      16.271mm      14.291mm      16.271mm      15.241mm  T        270.00 08055C104JAT2A 
+

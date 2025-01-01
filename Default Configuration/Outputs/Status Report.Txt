@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 10:59:48 AM On 12/13/2023
+
+Output: ExportSTEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [ZeroCrossDetector.CSPcbDoc]
+   Generated File[ZeroCrossDetector.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:59:52 AM On 12/13/2023

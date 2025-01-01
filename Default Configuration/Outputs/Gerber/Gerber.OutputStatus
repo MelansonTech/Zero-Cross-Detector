@@ -1,0 +1,21 @@
+[OutputStatus]
+OutputFileNames0=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GTL
+OutputFileNames1=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GBL
+OutputFileNames2=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GPB
+OutputFileNames3=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GPT
+OutputFileNames4=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GTO
+OutputFileNames5=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GTP
+OutputFileNames6=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GTS
+OutputFileNames7=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GBS
+OutputFileNames8=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GBO
+OutputFileNames9=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.Outline
+OutputFileNames10=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.GM3
+OutputFileNames11=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.Assembly Top
+OutputFileNames12=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.3D Top
+OutputFileNames13=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.Courtyard Top
+OutputFileNames14=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.Courtyard Bottom
+OutputFileNames15=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.RUL
+OutputFileNames16=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.EXTREP
+OutputFileNames17=E:\OneDrive\Shawn\circuitstudio projects\ZeroCrossDetector\Default Configuration\Outputs\Gerber\ZeroCrossDetector.REP
+Success=1
+HasRun=1
