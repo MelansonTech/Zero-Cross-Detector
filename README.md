@@ -1,5 +1,5 @@
-Project Description: Piezo Electric Buzzer with Schmitt Trigger Oscillator
+Project Description: AC Zero-Cross Detector Using LM324
 
-This project features a Piezo Electric Buzzer Module powered by a 5V DC supply. The buzzer is driven by an oscillator circuit that uses a Schmitt Trigger Buffer to generate a stable frequency. The Schmitt trigger ensures clean, noise-resistant oscillation, improving the reliability of the buzzer's tone generation.
+This project implements an AC Zero-Cross Detector circuit using an LM324 Operational Amplifier (Op-Amp). The detector is designed to monitor the zero-crossing points of an alternating current (AC) signal, providing a clean digital output that indicates when the AC voltage crosses zero volts. This is essential for triggering timing circuits, phase control, or other AC-related applications.
 
-The module is equipped with a simple on/off control, allowing easy activation or deactivation of the buzzer. When powered, the oscillator continuously drives the piezo buzzer, emitting a consistent sound. The circuit is designed to be compact, low-power, and highly efficient, making it ideal for applications requiring simple sound signaling or alert systems.
+The LM324, a low-power quad op-amp, is used to amplify and condition the AC input signal. It ensures accurate detection of the zero-crossing point by comparing the AC signal with a reference voltage. When the input signal crosses zero volts, the output switches state, creating a digital pulse. The circuit is powered with a single supply voltage and is suitable for both low and high-voltage AC signals with appropriate scaling components. This design is compact and efficient, ideal for use in motor control, phase-locking systems, and power monitoring.
