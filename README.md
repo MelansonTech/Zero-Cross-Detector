@@ -1,0 +1,5 @@
+Project Description: AC Zero-Cross Detector Using LM324
+
+This project implements an AC Zero-Cross Detector circuit using an LM324 Operational Amplifier (Op-Amp). The detector is designed to monitor the zero-crossing points of an alternating current (AC) signal, providing a clean digital output that indicates when the AC voltage crosses zero volts. This is essential for triggering timing circuits, phase control, or other AC-related applications.
+
+The LM324, a low-power quad op-amp, is used to amplify and condition the AC input signal. It ensures accurate detection of the zero-crossing point by comparing the AC signal with a reference voltage. When the input signal crosses zero volts, the output switches state, creating a digital pulse. The circuit is powered with a single supply voltage and is suitable for both low and high-voltage AC signals with appropriate scaling components. This design is compact and efficient, ideal for use in motor control, phase-locking systems, and power monitoring.
