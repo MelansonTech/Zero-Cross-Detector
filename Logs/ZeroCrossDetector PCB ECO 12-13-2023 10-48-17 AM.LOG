@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=X_DETECT Pin=J1-6
+Removed Member From Class: ClassName=LowVolt Member=X_DETECT
+Added Component: Designator=Q1(SOT23-3)
+Added Component: Designator=Q2(SOT23-3)
+Added Component: Designator=R3(res, 0805, HD)
+Added Component: Designator=R9(res, 0805, HD)
+Added Pin To Net: NetName=GND Pin=Q1-2
+Added Pin To Net: NetName=X_DETECT Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=Q2-2
+Added Pin To Net: NetName=VCC Pin=R3-2
+Added Pin To Net: NetName=VCC Pin=R9-2
+Change Net Name : Old Net Name=X_DETECT New Net Name=NetC6_1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q2-3
+Added Pin To Net: NetName=NetQ1_1 Pin=R9-1
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=X_DETECT Pin=J1-6
+Added Pin To Net: NetName=X_DETECT Pin=Q1-3
+Added Pin To Net: NetName=X_DETECT Pin=R3-1
+Added Net: Name=X_DETECT
+Added Member To Class: ClassName=ZeroCrossDetector Member=Component Q1 SMBT2222A
+Added Member To Class: ClassName=ZeroCrossDetector Member=Component Q2 SMBT2222A
+Added Member To Class: ClassName=ZeroCrossDetector Member=Component R3 Vishay CRCW08051K00JNEA
+Added Member To Class: ClassName=ZeroCrossDetector Member=Component R9 Vishay CRCW08051K00JNEA
+Added Member To Class: ClassName=LowVolt Member=Wire NetC6_1
